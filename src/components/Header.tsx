@@ -19,7 +19,6 @@ const Header = () => {
     { name: 'Recipes', href: '/recipes' },
   ];
 
-  // Add profile to navigation if user is logged in
   if (user) {
     navigation.push({ name: 'Profile', href: '/profile' });
   }
@@ -31,7 +30,6 @@ const Header = () => {
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
             <Link to="/" className="flex items-center space-x-2 hover-scale">
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">C</span>
@@ -41,7 +39,6 @@ const Header = () => {
               </span>
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               {navigation.map((item) => (
                 <Link
@@ -58,7 +55,6 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* User Actions */}
             <div className="hidden md:flex items-center space-x-4">
               {user ? (
                 <div className="flex items-center space-x-3">
@@ -93,7 +89,6 @@ const Header = () => {
               )}
             </div>
 
-            {/* Mobile menu button */}
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -106,7 +101,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden animate-fade-in">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">

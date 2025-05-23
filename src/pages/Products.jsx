@@ -7,7 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import SkeletonCard from '../components/SkeletonCard';
 
 const Products = () => {
-  const [visibleProducts, setVisibleProducts] = useState(8); // Initial number of visible products
+  const [visibleProducts, setVisibleProducts] = useState(4); 
   
   const { data: products, isLoading, error } = useQuery({
     queryKey: ['products'],
@@ -18,7 +18,7 @@ const Products = () => {
   });
 
   const loadMoreProducts = () => {
-    setVisibleProducts(prev => prev + 8); // Load 8 more products
+    setVisibleProducts(prev => prev + 4); 
   };
 
   if (error) {
@@ -44,9 +44,8 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {isLoading ? (
-            // Skeleton loading
             Array.from({ length: 8 }).map((_, index) => (
               <SkeletonCard key={index} />
             ))

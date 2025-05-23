@@ -38,7 +38,6 @@ const Index = () => {
 
   return (
     <div className="w-full">
-      {/* Hero Section with improved styling */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-100 opacity-70"></div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
@@ -48,7 +47,7 @@ const Index = () => {
               ContentHub
             </span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl md:text-2xl mb-[100px] text-gray-600  max-w-3xl mx-auto animate-fade-in">
             Your ultimate destination for discovering amazing content. Explore posts, products, connect with users, and find delicious recipes all in one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
@@ -76,8 +75,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Grid with Card components */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-[100px] sm:px-6 lg:px-8 bg-white mt-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Explore Our Features
@@ -108,45 +106,6 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section with improved styling */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            About ContentHub
-          </h2>
-          <div className="prose prose-lg mx-auto text-gray-600">
-            <p className="mb-6">
-              ContentHub is a modern platform that brings together the best of digital content discovery. 
-              Whether you're looking for inspiring articles, unique products, interesting people to connect with, 
-              or delicious recipes to try, we've got you covered.
-            </p>
-            <p className="mb-6">
-              Our platform is designed with user experience in mind, featuring smooth animations, 
-              responsive design, and intuitive navigation. Join our community and start exploring 
-              the wealth of content available at your fingertips.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-              <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
-                <div className="text-sm text-gray-500">Posts</div>
-              </div>
-              <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
-                <div className="text-3xl font-bold text-purple-600 mb-2">30+</div>
-                <div className="text-sm text-gray-500">Products</div>
-              </div>
-              <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
-                <div className="text-3xl font-bold text-green-600 mb-2">30+</div>
-                <div className="text-sm text-gray-500">Users</div>
-              </div>
-              <div className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-all duration-300">
-                <div className="text-3xl font-bold text-orange-600 mb-2">50+</div>
-                <div className="text-sm text-gray-500">Recipes</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

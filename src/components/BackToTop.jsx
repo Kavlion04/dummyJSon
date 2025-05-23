@@ -27,17 +27,17 @@ const BackToTop = () => {
   };
 
   return (
-    <>
+    <div className="fixed bottom-24 right-4 z-50">
       {isVisible && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg animate-fade-in hover-scale"
+          className="fixed top-[-100px] right-8 z-50 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 shadow-lg animate-fade-in hover-scale"
           size="icon"
         >
           <ChevronUp className="w-5 h-5" />
         </Button>
       )}
-    </>
+    </div>
   );
 };
 
